@@ -1,0 +1,10 @@
+.infos{
+    margin-right: -10px;
+}
+.name{
+    font-weight: bold;
+}
+.listPrice{
+    font-size: small;
+    color: gray;
+}

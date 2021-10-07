@@ -1,0 +1,30 @@
+<header><h1 class="text-center"> Meu Carrinho</h1></header>
+<hr>
+<body>
+    <div class="d-flex mb-3 flex-row justify-content-around" *ngFor="let item of listaCarrinho">
+            <div class="col-md-2 d-flex justify-content-start">
+                <img src="{{item.imageUrl}}" class="img-thumbnail" alt="{{item.name}}.png">
+            </div>
+            <div class="col-md-9 d-flex justify-content-start">
+                <div class="row d-flex justify-content-start infos">
+                    <span class="name">{{item.name}}</span>
+                    <span class="listPrice">{{item.listPrice / 100 | currency:'R$ '}}</span>
+                    <span class="sellingPrice">{{item.sellingPrice / 100 | currency:'R$ '}}</span>
+                </div>
+        </div>
+    </div>
+</body>
+<hr>
+<footer class="row d-flex justify-content-center">
+    <h3 class="col-md-9">
+        Total
+    </h3>
+    <h3 class="col-md-2">
+        {{totalValue / 100 | currency:'R$ '}}
+    </h3>
+    <h5 *ngIf="totalValue > 1000" class="col-md-auto alert alert-success success" role="alert">
+        Parabéns, sua compra tem frete grátis !
+    </h5>
+    <hr>
+    <button class="col-md-11 mb-3 btn btn-primary">Finalizar compra</button>
+</footer>

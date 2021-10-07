@@ -26,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # codeby-teste
+Esse é um projeto voltado para o processo seletivo da empresa Codeby onde foi pedido o desenvolvimento de um carrinho, consumindo uma API disponibilizada com eles e com alguns comportamentos específicos.
+
+# executar
+Para executar esse projeto utilizei de Angular 12+, bootstrap e json-server (para armazenamento local). Para executar o projeto é necessario utilizar os comandos de "ng s" em um terminal e em outro, com a pasta data.json em execução, utilizar o comando "json-server --watch db.json" (para a lista com resultado menor que 10) e "json-server --watch db2.json" (para a lista com resultado maior que 10)
